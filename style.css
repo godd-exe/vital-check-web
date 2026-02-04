@@ -1,0 +1,4 @@
+body { font-family: 'Inter', sans-serif; }
+.card-hover:hover {
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitalCheck | Reliable Home Diagnostics</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .page-section { display: none; }
+        .page-section.active { display: block; }
+    </style>
+</head>
+<body class="bg-white">
+
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end pointer-events-none">
+        <div class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white px-6 py-4 rounded-2xl shadow-[0_10px_40px_rgba(79,70,229,0.4)] font-extrabold animate-bounce border border-white/20 text-sm md:text-base backdrop-blur-sm pointer-events-auto">
+            <div class="flex items-center gap-3">
+                <span class="bg-white/20 p-1 rounded-full text-lg">🏠</span>
+                <span>Blood collection will be done at home!</span>
+            </div>
+         </div>
+    </div>
+
+    <nav class="bg-white/80 backdrop-blur-md border-b sticky top-0 z-40 py-4 px-6 flex justify-between items-center">
+        <div class="flex items-center gap-2">
+            <div class="bg-blue-600 p-2 rounded-lg text-white">✚</div>
+            <span class="text-xl font-extrabold text-slate-800">Vital<span class="text-blue-600">Check</span></span>
+        </div>
+        <div class="flex gap-4 md:gap-8 text-sm font-bold text-slate-600">
+            <button onclick="showPage('home')" class="hover:text-blue-600">Home</button>
+            <button onclick="showPage('packages')" class="hover:text-blue-600">Packages</button>
+            <button onclick="showPage('support')" class="hover:text-blue-600">Support</button>
+        </div>
+    </nav>
+
+    <section id="home" class="page-section active">
+    <div class="relative h-[500px] flex items-center justify-center text-center text-white">
+        <img src="https://images.unsplash.com/photo-1581056771107-24ca5f033842?q=80&w=1200" class="absolute inset-0 w-full h-full object-cover brightness-[0.3]" alt="Medical Lab">
+        <div class="relative z-10 px-4">
+            <span class="bg-blue-600/30 border border-blue-400 px-4 py-1 rounded-full text-sm font-bold tracking-widest uppercase mb-4 inline-block">Trusted Diagnostics</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6">Complete Wellness <br><span class="text-blue-500 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">Starts Within.</span></h1>
+            <p class="text-lg md:text-xl max-w-2xl mx-auto text-slate-300">Don't wait for symptoms. Get professional lab insights delivered to your doorstep.</p>
+            <button onclick="showPage('packages')" class="mt-8 bg-white text-blue-600 px-8 py-4 rounded-2xl font-bold hover:bg-blue-50 transition-all shadow-xl">Explore Packages ↓</button>
+        </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto py-24 px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-black text-slate-900 mb-4">What do we actually check?</h2>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:border-blue-200 transition-all cursor-default">
+                <div class="w-14 h-14 bg-red-50 text-red-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">❤️</div>
+                <h3 class="text-xl font-bold mb-4 text-slate-800">Cardiovascular (Heart)</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">We measure <b>Cholesterol (Lipid Profile)</b>. High levels of LDL (bad cholesterol) can block your arteries silently, leading to heart risks. Regular checks help manage heart age.</p>
+            </div>
+
+            <div class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:border-blue-200 transition-all cursor-default">
+                <div class="w-14 h-14 bg-emerald-50 text-emerald-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">🧪</div>
+                <h3 class="text-xl font-bold mb-4 text-slate-800">Liver & Kidney Function</h3>
+                <p class="text-slate-600 text-sm leading-relaxed">Tests like <b>SGOT, SGPT, and Creatinine</b> tell us how well your body filters toxins. Liver issues often show no symptoms until they are advanced.</p>
+            </div>
+
+            <div class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:border-blue-200 transition-all cursor-default">
+                <div class="w-14 h-14 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">☀️</div>
+                <h3 class="text-xl font-bold mb-4 text-slate-800">Vitamins & Minerals</h3>
+                <p class="text-slate-600 text-sm leading-relaxed"><b>Vitamin D and B12</b> are common deficiencies in India. Low levels cause bone pain, hair loss, and chronic fatigue. Monitoring ensures your energy stays high.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-slate-900 text-white py-24 px-6 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-extrabold mb-8 leading-tight">Why a 5-Minute Blood Draw <br><span class="text-blue-400">Can Add 5 Years to Your Life.</span></h2>
+                
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <div class="text-blue-400 text-2xl font-black">01</div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Asymptomatic Detection</h4>
+                            <p class="text-slate-400 text-sm">Conditions like Diabetes (Sugar) and Hypertension (BP) are "Silent Killers." A blood test detects them years before a physical symptom appears.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="text-blue-400 text-2xl font-black">02</div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Hormonal Balance</h4>
+                            <p class="text-slate-400 text-sm">Thyroid issues (TSH) can affect your weight, mood, and sleep. We provide a full thyroid profile to ensure your metabolism is balanced.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="text-blue-400 text-2xl font-black">03</div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-2">Inflammation Tracking</h4>
+                            <p class="text-slate-400 text-sm">High CRP or ESR levels indicate hidden inflammation in the body, which could be a sign of infection or underlying immunity issues.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="bg-gradient-to-br from-blue-600 to-indigo-700 p-10 rounded-[40px] shadow-2xl relative z-10">
+                    <h3 class="text-2xl font-bold mb-4 italic">"The best healthcare is proactive, not reactive."</h3>
+                    <p class="text-blue-100 leading-relaxed mb-6">Our home-collection service ensures you don't have to wait in clinic lines. Professional phlebotomists (blood collectors) arrive at your preferred time, and reports are synced to your phone.</p>
+                    <div class="flex items-center gap-4 border-t border-blue-400/30 pt-6">
+                        <div class="h-12 w-12 rounded-full bg-blue-400/20 flex items-center justify-center">💉</div>
+                        <p class="text-sm font-semibold">100% Sterile & NABL Accredited Lab Testing</p>
+                    </div>
+                </div>
+                <div class="absolute -top-10 -right-10 w-64 h-64 bg-blue-500/20 rounded-full blur-3xl"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="packages" class="page-section max-w-7xl mx-auto py-16 px-6">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-slate-900">Our Diagnostic Packages</h2>
+            <p class="text-slate-500 mt-2">Professional lab tests from the comfort of your home.</p>
+        </div>
+        <div id="package-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            </div>
+    </section>
+
+    <section id="support" class="page-section max-w-5xl mx-auto py-16 px-6">
+        <h2 class="text-3xl font-bold text-slate-900 mb-8">Support & General Diagnostics</h2>
+        <div class="grid gap-6">
+            <div class="border-l-4 border-blue-600 bg-slate-50 p-6 rounded-r-xl">
+                <h4 class="font-bold text-lg mb-2">How to prepare for a test?</h4>
+                <p class="text-slate-600 italic">"For most blood tests, 10-12 hours of fasting is required. You can drink water but avoid tea, coffee, or breakfast."</p>
+            </div>
+            
+            <div class="bg-white border rounded-2xl p-8 shadow-sm">
+                <h4 class="font-bold text-xl mb-4 text-blue-600">General Diagnostic Info</h4>
+                <p class="text-slate-600 mb-4">We use NABL accredited labs to process your samples. Your reports will be delivered via WhatsApp and Email within 24 hours.</p>
+                
+                <div class="mt-8 p-10 border-2 border-dashed border-slate-200 rounded-xl text-center text-slate-400">
+                    [ Your Additional Support Info, Contact Numbers, or FAQ will go here. You can edit this in the code easily! ]
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Page Switching Logic
+        function showPage(pageId) {
+            document.querySelectorAll('.page-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+            window.scrollTo(0, 0);
+        }
+
+        // Load Packages
+        fetch('packages.json')
+            .then(res => res.json())
+            .then(data => {
+                const container = document.getElementById('package-container');
+                data.forEach(pkg => {
+                    container.innerHTML += `
+                        <div class="bg-white border rounded-2xl overflow-hidden hover:shadow-lg transition-all">
+                            <img src="${pkg.image}" class="h-40 w-full object-cover">
+                            <div class="p-5">
+                                <h3 class="font-bold text-slate-800 text-lg">${pkg.name}</h3>
+                                <p class="text-blue-600 font-extrabold mt-1">${pkg.price}</p>
+                                <p class="text-slate-500 text-xs mt-3 mb-5">${pkg.details}</p>
+                                <button onclick="window.open('YOUR_GOOGLE_FORM_LINK', '_blank')" class="w-full bg-blue-600 text-white py-2 rounded-lg font-bold hover:bg-slate-900 transition-colors">
+                                    Book Now
+                                </button>
+                            </div>
+                        </div>`;
+                });
+            });
+    </script>
+</body>
+</html>

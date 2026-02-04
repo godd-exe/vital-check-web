@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Fever Profile",
+    "price": "₹499",
+    "image": "https://images.unsplash.com/photo-1584036561566-baf8f5f1b144?q=80&w=500",
+    "details": "CBC, ESR, and Urine Analysis. Best for viral symptoms."
+  },
+  {
+    "id": 2,
+    "name": "Senior Citizen Male",
+    "price": "₹1999",
+    "image": "https://images.unsplash.com/photo-1581594632702-fbd15192087c?q=80&w=500",
+    "details": "Includes Prostate Screening, Heart Check, and Bone Density."
+  },
+  {
+    "id": 3,
+    "name": "Women Wellness Pro",
+    "price": "₹1799",
+    "image": "https://images.unsplash.com/photo-1579152276506-5d5ec7ac6372?q=80&w=500",
+    "details": "Thyroid, Iron Deficiency, and Vitamin B12 screening."
+  },
+  {
+    "id": 4,
+    "name": "Diabetes Screening",
+    "price": "₹699",
+    "image": "https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=500",
+    "details": "HbA1c and Fasting Blood Sugar with Doctor Report."
+  }
+]
