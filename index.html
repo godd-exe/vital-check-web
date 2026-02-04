@@ -17,8 +17,16 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    
     <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        body { 
+            font-family: 'Plus Jakarta Sans', sans-serif; 
+            scroll-behavior: smooth; 
+            /* PREVENTS TEXT HIGHLIGHTING/BLUE BOX ON MOBILE */
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
         .page-section { display: none; }
         .page-section.active { display: block; }
     </style>
@@ -65,77 +73,44 @@
                 <div class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:border-blue-200 transition-all cursor-default">
                     <div class="w-14 h-14 bg-red-50 text-red-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">❤️</div>
                     <h3 class="text-xl font-bold mb-4 text-slate-800">Cardiovascular (Heart)</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">We measure <b>Cholesterol (Lipid Profile)</b>. High levels of LDL (bad cholesterol) can block your arteries silently, leading to heart risks.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">We measure <b>Cholesterol (Lipid Profile)</b>. High levels of LDL can block your arteries silently.</p>
                 </div>
                 <div class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:border-blue-200 transition-all cursor-default">
                     <div class="w-14 h-14 bg-emerald-50 text-emerald-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">🧪</div>
                     <h3 class="text-xl font-bold mb-4 text-slate-800">Liver & Kidney Function</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Tests like <b>SGOT, SGPT, and Creatinine</b> tell us how well your body filters toxins. Detect issues before symptoms show.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">Tests like <b>SGOT and SGPT</b> tell us how well your body filters toxins. Detect issues early.</p>
                 </div>
                 <div class="group bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl hover:border-blue-200 transition-all cursor-default">
                     <div class="w-14 h-14 bg-amber-50 text-amber-500 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition-transform">☀️</div>
                     <h3 class="text-xl font-bold mb-4 text-slate-800">Vitamins & Minerals</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed"><b>Vitamin D and B12</b> are common deficiencies in India. Regular monitoring ensures your energy levels stay high.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="bg-slate-900 text-white py-24 px-6 overflow-hidden relative">
-            <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-                <div>
-                    <h2 class="text-4xl font-extrabold mb-8 leading-tight">Why a 5-Minute Blood Draw <br><span class="text-blue-400">Can Add 5 Years to Your Life.</span></h2>
-                    <div class="space-y-8">
-                        <div class="flex gap-6">
-                            <div class="text-blue-400 text-2xl font-black">01</div>
-                            <div>
-                                <h4 class="text-xl font-bold mb-2">Asymptomatic Detection</h4>
-                                <p class="text-slate-400 text-sm">Conditions like Diabetes and Hypertension are silent. A test detects them years before physical symptoms appear.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-6">
-                            <div class="text-blue-400 text-2xl font-black">02</div>
-                            <div>
-                                <h4 class="text-xl font-bold mb-2">Hormonal Balance</h4>
-                                <p class="text-slate-400 text-sm">Thyroid issues affect weight and mood. We provide full profiles to ensure your metabolism is balanced.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="bg-gradient-to-br from-blue-600 to-indigo-700 p-10 rounded-[40px] shadow-2xl relative z-10">
-                        <h3 class="text-2xl font-bold mb-4 italic">"Proactive healthcare is better."</h3>
-                        <p class="text-blue-100 leading-relaxed mb-6">Our phlebotomists arrive at your time, and reports are synced to your phone within 24 hours.</p>
-                        <div class="flex items-center gap-4 border-t border-blue-400/30 pt-6">
-                            <div class="h-12 w-12 rounded-full bg-blue-400/20 flex items-center justify-center">💉</div>
-                            <p class="text-sm font-semibold">100% Sterile & NABL Accredited</p>
-                        </div>
-                    </div>
+                    <p class="text-slate-600 text-sm leading-relaxed"><b>Vitamin D and B12</b> deficiencies are common. Regular monitoring ensures your energy levels stay high.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <section id="packages" class="page-section max-w-7xl mx-auto py-16 px-6">
-        <div class="text-center mb-12">
-            <h2 class="text-3xl font-extrabold text-slate-900">Our Diagnostic Packages</h2>
-            <p class="text-slate-500 mt-2">Professional lab tests from the comfort of your home.</p>
-        </div>
         <div id="package-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
     </section>
 
     <section id="support" class="page-section max-w-5xl mx-auto py-16 px-6">
-        <h2 class="text-3xl font-bold text-slate-900 mb-8">Support & General Diagnostics</h2>
+        <h2 class="text-3xl font-bold text-slate-900 mb-8 text-center md:text-left">Support & Contact</h2>
         <div class="grid gap-6">
             <div class="border-l-4 border-blue-600 bg-slate-50 p-6 rounded-r-xl">
                 <h4 class="font-bold text-lg mb-2">How to prepare for a test?</h4>
                 <p class="text-slate-600 italic">"10-12 hours of fasting is required for most blood tests. You can drink water."</p>
             </div>
-            <div class="bg-white border rounded-2xl p-8 shadow-sm">
-                <h4 class="font-bold text-xl mb-4 text-blue-600">General Diagnostic Info</h4>
-                <p class="text-slate-600 mb-4">Reports delivered via WhatsApp and Email within 24 hours.</p>
-                <div class="mt-8 p-10 border-2 border-dashed border-slate-200 rounded-xl text-center text-slate-400">
-                    [ Add Contact Numbers or FAQ here ]
-                </div>
+            
+            <div class="bg-white border rounded-2xl p-8 shadow-sm text-center md:text-left">
+                <h4 class="font-bold text-xl mb-4 text-blue-600">Contact Us Directly</h4>
+                <p class="text-slate-600 mb-8">Message us on WhatsApp for test details, package customisation, or booking assistance.</p>
+                
+                <a href="https://wa.me/910000000000?text=Hello%20VitalCheck,%20I%20have%20an%20enquiry%20about%20your%20health%20packages." 
+                   target="_blank" 
+                   class="inline-flex items-center gap-3 bg-emerald-500 text-white px-10 py-5 rounded-2xl font-black hover:bg-emerald-600 transition-all shadow-xl hover:-translate-y-1">
+                    <span class="text-xl">Chat on WhatsApp</span>
+                    <span class="bg-white/20 p-1 rounded-lg">💬</span>
+                </a>
             </div>
         </div>
     </section>
@@ -155,13 +130,13 @@
                 const container = document.getElementById('package-container');
                 data.forEach(pkg => {
                     container.innerHTML += `
-                        <div class="bg-white border rounded-2xl overflow-hidden hover:shadow-lg transition-all">
-                            <img src="${pkg.image}" class="h-40 w-full object-cover">
-                            <div class="p-5">
-                                <h3 class="font-bold text-slate-800 text-lg">${pkg.name}</h3>
-                                <p class="text-blue-600 font-extrabold mt-1">${pkg.price}</p>
-                                <p class="text-slate-500 text-xs mt-3 mb-5">${pkg.details}</p>
-                                <button onclick="window.open('YOUR_GOOGLE_FORM_LINK', '_blank')" class="w-full bg-blue-600 text-white py-2 rounded-lg font-bold hover:bg-slate-900 transition-colors">
+                        <div class="bg-white border rounded-3xl overflow-hidden hover:shadow-2xl transition-all border-slate-100">
+                            <img src="${pkg.image}" class="h-48 w-full object-cover">
+                            <div class="p-6">
+                                <h3 class="font-bold text-slate-800 text-xl">${pkg.name}</h3>
+                                <p class="text-blue-600 font-black text-lg mt-1">${pkg.price}</p>
+                                <p class="text-slate-500 text-sm mt-4 mb-6 leading-relaxed">${pkg.details}</p>
+                                <button onclick="window.open('https://forms.gle/dLvzFVHM2mNxFuXQ7', '_blank')" class="w-full bg-slate-900 text-white py-4 rounded-xl font-bold hover:bg-blue-600 transition-all">
                                     Book Now
                                 </button>
                             </div>
